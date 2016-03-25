@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'>
+
+    <style>
+    	html {
+    		height: 100%;
+		    box-sizing: border-box;
+		    font-family: arial;
+		}
+
+		*, *:before, *:after {
+		  	box-sizing: inherit;
+		  	margin: 0px;
+			padding: 0px;
+		}
+
+		img {
+			outline : none;
+		}
+
+        a, a:hover, a:visited {
+            color: #1665BD;
+        }
+
+
+
+
+    	body {
+    		font-family: 'Marcellus', serif;
+    		background-color: #A9815D;
+            color: #333;
+    		/*height: 100%;*/
+    	}
+
+    	#bg_wood {
+    		position: fixed;
+    		height: 100%;
+    		width: 100%;
+    		top: 0px;
+    		background-image: url('public/WoodFine.jpg');
+    		opacity: 0.7;
+    		z-index: -1;
+    	}
+
+    	
+    	#content {
+    		border-radius: 2px;
+    		border: 1px solid gray;
+    		padding: 2% 4% 2% 4%;
+    		background-color: rgba(255, 255, 255, 0.9);
+
+            background: -moz-linear-gradient(left top , rgba(220, 220, 220, 0.9), rgba(255, 255, 255, 0.9) 10%);
+
+    		box-shadow: 1px 1px 12px rgba(0,0,0,0.4);
+    		margin: 10px 10% 10px 10%;
+    		overflow: hidden;
+            /*transform: rotate(0.07deg);*/
+    	}
+
+    	#header {
+    		display: block;
+    		max-width: 100%;
+    		max-height: 200px;
+    	}
+
+    	.chunk {
+    		padding: 2%;
+    		border: 0px dashed rgba(0,0,0,0.2);
+    		border-top-width: 1px;
+    		font-size: 20px;
+    		text-align: center;
+    	}
+
+    	.chunk img {
+    		/*float: left;*/
+    		width: 100%;
+    		max-width: 500px;
+    		margin-right: 20px;
+            border: 1px solid rgba(0,0,0,0.5); 
+            border-radius: 4px;
+    	}
+
+    	.chunk .text {
+    		display: inline-block;
+    		/*font-style: italic;*/
+    	}
+
+        .chunk span {
+            display: inline-block;
+            margin-right: 25px;
+        }
+
+
+    	@media all and (max-width: 500px) {
+			#content {
+				margin: 10px;
+			}
+		  	
+		}
+
+    </style>
+</head>
+
+<body>
+<div id="bg_wood"></div>
+<div id="content">
+	<center><img id="header" src="public/logo_new.png"></img></center>
+
+
+	<div class="chunk">
+		<div class="text">Complete on-site furniture assembly, installation, and repair services.</div>
+		<img src="public/furniture.jpg"></img>
+		
+	</div>
+
+	<div class="chunk">
+		<b>Contact Info</b><br>
+		<span>Email: 
+            <a href="mailto:kaleb@unfuse.net" target="_top">kaleb@unfuse.net</a>
+        </span>
+        <span>Phone: (512)-545-8496</span>
+	</div>
+	
+</div>
+</body>
+
+</html>
